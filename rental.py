@@ -52,7 +52,7 @@ class Rental:
 		return self.movie.get_price_code().price(self.days_rented)
 
 	def get_points(self):
-		return self.movie.get_price_code().points(self.days_rented)
+		return self.movie.get_price_code().renter_point(self.days_rented)
 		# if self.get_movie().get_price_code() == Movie.NEW_RELEASE:
 		# 	return self.get_days_rented()
 		# else:

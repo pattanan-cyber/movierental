@@ -18,7 +18,7 @@ class PriceCode(Enum):
         pricing = self.value["price"]  # the enum member's price formula
         return pricing(days)
 
-    def points(self, days: int) -> float:
+    def renter_point(self, days: int):
         point = self.value["frp"]
         return point(days)
 
